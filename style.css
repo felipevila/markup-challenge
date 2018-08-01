@@ -1,11 +1,11 @@
 html {
-    background: url(background.jpg);
-    background-size:cover;
     font-family:'helvetica neue';
     text-align: center;
     font-size: 10px;
-  }
+}
 body {
+    background: url(background.jpg);
+    background-size:cover;
     margin: 0;
     font-size: 2rem;
     display:flex;
