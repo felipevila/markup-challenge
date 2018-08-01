@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Endava JS + CSS Analog Clock</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Add DIVS for clock, clock-face and hands-->
+</body>
+<script>
+  // Select SECOND hand from the DOM 
+  const segundero = document.querySelector(".second-hand");
+  // Select MINUTE hand from the DOM 
+  // Select HOUR hand from the DOM 
+
+  // Create function to handle clock behavior
+  function setDate() {
+    // Create a New Date Object
+    const now = new Date();
+    
+    // Use a method to get seconds from new object
+    const segundos = now.getSeconds();
+    // Convert seconds to degrees
+    const segundosGrados = ((segundos / 60) * 360) + 90;
+    // Rotate second hand according to current time
+    segundero.style.transform = `rotate(${segundosGrados}deg)`;
+    
+    // Use a method to get minutes from new object
+    // Convert minute to degrees
+    // Rotate minute hand according to current time
+
+    // Use a method to get hours from new object
+    // Convert hours to degrees
+    // Rotate minute hand according to current time
+  }
+
+  // Call steDate() function every second
+  setInterval(setDate, 1000);
+
+</script>
+</html>
